@@ -13,7 +13,7 @@ class StarterPageViewController: UIViewController {
     @IBOutlet weak var nameTextfield: UITextField!
     
     override func viewWillAppear(_ animated: Bool) {
-        nameTextfield.changeTextfield()
+//        nameTextfield.changeTextfield()
     }
     
     override func viewDidLoad() {
@@ -40,7 +40,7 @@ class StarterPageViewController: UIViewController {
             userDefaults.set(nameTextfield.text!, forKey: "name")
             segueToMain()
         }else {
-            self.nameTextfield.backgroundColor = UIColor.systemRed.withAlphaComponent(0.25)
+            
         }
     }
     
