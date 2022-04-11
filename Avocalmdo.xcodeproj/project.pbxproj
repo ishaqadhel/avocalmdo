@@ -19,6 +19,7 @@
 		4BEFFD6B2804188100274C48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFFD6A2804188100274C48 /* HomeViewController.swift */; };
 		4BEFFD6D28041A3400274C48 /* JournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFFD6C28041A3400274C48 /* JournalingViewController.swift */; };
 		4BEFFD6F28041A8400274C48 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFFD6E28041A8400274C48 /* Extension.swift */; };
+		D498DD1E280479CE00491FD5 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D498DD1D280479CE00491FD5 /* SF-Pro.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4BEFFD6A2804188100274C48 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4BEFFD6C28041A3400274C48 /* JournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingViewController.swift; sourceTree = "<group>"; };
 		4BEFFD6E28041A8400274C48 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D498DD1D280479CE00491FD5 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		4B2E1D942804109600611427 /* Avocalmdo */ = {
 			isa = PBXGroup;
 			children = (
+				D498DD1C280479BB00491FD5 /* fonts */,
 				4B2E1D952804109600611427 /* AppDelegate.swift */,
 				4B2E1D972804109600611427 /* SceneDelegate.swift */,
 				4B149086280410DB00C11FF5 /* Model */,
@@ -123,6 +126,14 @@
 				4BEFFD6C28041A3400274C48 /* JournalingViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		D498DD1C280479BB00491FD5 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D498DD1D280479CE00491FD5 /* SF-Pro.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4B2E1D8D2804109600611427 /* Build configuration list for PBXProject "Avocalmdo" */;
+			buildConfigurationList = 4B2E1D8D2804109600611427 /* Build configuration list for PBXProject "avocalmdo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -184,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B2E1DA52804109700611427 /* LaunchScreen.storyboard in Resources */,
+				D498DD1E280479CE00491FD5 /* SF-Pro.ttf in Resources */,
 				4B2E1DA22804109700611427 /* Assets.xcassets in Resources */,
 				4B2E1D9D2804109600611427 /* Main.storyboard in Resources */,
 				4BA272BD280411D700AF8EBA /* Calendar.storyboard in Resources */,
@@ -403,7 +415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B2E1D8D2804109600611427 /* Build configuration list for PBXProject "Avocalmdo" */ = {
+		4B2E1D8D2804109600611427 /* Build configuration list for PBXProject "avocalmdo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B2E1DA72804109700611427 /* Debug */,
