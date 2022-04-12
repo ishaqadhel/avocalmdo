@@ -10,47 +10,46 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+        
+    // HeaderView Elements
+    @IBOutlet weak var headerViewDate: UILabel!
+    @IBOutlet weak var headerViewTitle: UILabel!
+
+    // JournalingView Elements
+    @IBOutlet weak var journalingView: UIView!
+    @IBOutlet weak var journalingViewTitle: UILabel!
+    @IBOutlet weak var journalingViewSubTitle: UILabel!
     
-    @IBOutlet weak var uiSlider: UISlider!
+    @IBOutlet weak var journalingIconViewLeft: UIView!
+    @IBOutlet weak var journalingIconViewMiddle: UIView!
+    @IBOutlet weak var journalingIconViewRight: UIView!
+    @IBOutlet weak var journalingIconViewLeftText: UILabel!
+    @IBOutlet weak var journalingIconViewMiddleText: UILabel!
+    @IBOutlet weak var journalingIconViewRightText: UILabel!
+    
+    // QuotesView Elements
+    @IBOutlet weak var quoteView: UIView!
+    @IBOutlet weak var quoteViewText: UILabel!
+    
+    // FactsView Elements
+    @IBOutlet weak var factsView: UIView!
+    @IBOutlet weak var factsViewBackgroundImage: UIImageView!
+    @IBOutlet weak var factsViewTitle: UILabel!
+    @IBOutlet weak var factsViewText: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //navigationController?.setNavigationBarHidden(true, animated: false)
         // Do any additional setup after loading the view.
-        imageView.isUserInteractionEnabled = true
-        let tappedGesture = UITapGestureRecognizer(target: self, action: #selector(responseTapped(_:)))
-        imageView.addGestureRecognizer(tappedGesture)
-        let tapped = UITapGestureRecognizer(target: self, action: #selector(textFieldResponse(_:)))
-        view.addGestureRecognizer(tapped)
-    }
-    
-    @objc private func responseTapped(_ gesture : UITapGestureRecognizer) {
-        print("umage")
         
+        // Apply Styles on 3 Root View On Home
+        journalingView.setRounded()
+        quoteView.setRounded()
+        factsView.setRounded()
+        factsViewBackgroundImage.setRounded()
+        journalingIconViewLeft.setRounded(cornerRadiusSize: 5)
+        journalingIconViewMiddle.setRounded(cornerRadiusSize: 5)
+        journalingIconViewRight.setRounded(cornerRadiusSize: 5)
     }
-    
-    @objc private func textFieldResponse(_ gesture : UITapGestureRecognizer) {
-        self.view.endEditing(true)
-    }
-    
-    @IBAction func testButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "goToJournaling", sender: self)
-        let alert = UIAlertController(title: "Are you sure", message: "This will be recorded for today", preferredStyle: .alert)
-        let okay = UIAlertAction(title: "Yes", style: .default) { uialertaction in
-            print("okay")
-        }
-        alert.addAction(okay)
-        present(alert, animated: true) {
-            print("selesai")
-        }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToJournaling" {
-            if let nextViewController = segue.destination as? JournalingViewController  {
-                nextViewController.access = true
-            }
-        }
-    }
-  
+
 }

@@ -22,3 +22,13 @@ extension UITextView {
         
     }
 }
+
+/**
+ * Function View For Styling
+ */
+extension UIView {
+    func setRounded(cornerRadiusSize: CGFloat = 13) {
+        self.layer.cornerRadius = cornerRadiusSize
+        self.layer.cornerCurve = .continuous // make corner more smooth
+    }
+}
