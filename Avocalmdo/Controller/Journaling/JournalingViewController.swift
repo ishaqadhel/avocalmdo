@@ -2,19 +2,28 @@
 //  JournalingViewController.swift
 //  Avocalmdo
 //
-//  Created by Mikhael Adiputra on 11/04/22.
+//  Created by Ishaq Adheltyo on 13/04/22.
 //
 
 import UIKit
 
-
-
 class JournalingViewController: UIViewController {
 
-    var access = false
+    // Emoji Components
+    @IBOutlet var cryEmoji: UIImageView!
+    @IBOutlet var sadEmoji: UIImageView!
+    @IBOutlet var normalEmoji: UIImageView!
+    @IBOutlet var smileEmoji: UIImageView!
+    @IBOutlet var happyEmoji: UIImageView!
+    
+    // Slider Input Components
+    @IBOutlet var anxietyMeter: UISlider!
+    @IBOutlet var activityMeter: UISlider!
+    @IBOutlet var stressMeter: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(access)
+
         // Do any additional setup after loading the view.
     }
     
