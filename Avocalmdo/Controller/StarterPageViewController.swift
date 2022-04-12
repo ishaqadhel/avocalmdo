@@ -9,39 +9,47 @@ import UIKit
 
 class StarterPageViewController: UIViewController {
 
+    @IBOutlet weak var greenTextBox: UIView!
     private let userDefaults = UserDefaults.standard
     @IBOutlet weak var nameTextfield: UITextField!
-    
-    override func viewWillAppear(_ animated: Bool) {
-//        nameTextfield.changeTextfield()
-    }
-    
+    public var userName: String? = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        greenTextBox.layer.cornerRadius = 8
     }
     
     override func viewWillLayoutSubviews() {
-        let userName = userDefaults.string(forKey: "name")
-        if (userName != nil) {
+        userName = userDefaults.string(forKey: "name")
+        if userName != nil {
             segueToMain()
         }
     }
     
     private func segueToMain() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc =  storyboard.instantiateViewController(withIdentifier: "main")
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+        let viewController =  storyboard.instantiateViewController(withIdentifier: "main")
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
-        if nameTextfield.text?.count != 0 {
-            userDefaults.set(nameTextfield.text!, forKey: "name")
+        if nameTextfield.hasText {
+            userName = nameTextfield.text
+            userDefaults.set(nameTextfield.text, forKey: "name")
             segueToMain()
-        }else {
-            
+        } else {
+            nameTextfield.layer.cornerRadius = 8
+            nameTextfield.layer.borderWidth = 1.0
+            nameTextfield.layer.borderColor = UIColor.red.cgColor
+            let alert = UIAlertController(title: "Name Empty", message: "Please add your name", preferredStyle: .alert)
+            let okayButton = UIAlertAction(title: "Okay", style: .default, handler: nil)
+            alert.addAction(okayButton)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
+    
 }
+
+

@@ -97,6 +97,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="greenTextBox" destination="JKO-dB-pQa" id="wmi-MP-8K2"/>
                         <outlet property="nameTextfield" destination="gWo-s7-5Uk" id="doT-hg-bXI"/>
                     </connections>
                 </viewController>
