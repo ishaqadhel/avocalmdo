@@ -36,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-white" translatesAutoresizingMaskIntoConstraints="NO" id="sIQ-4c-6v3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundWhite" translatesAutoresizingMaskIntoConstraints="NO" id="sIQ-4c-6v3">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCA-Kh-VZy" userLabel="QuoteView">
@@ -199,7 +199,7 @@ John Doe</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgS-GA-P2l" userLabel="FactsView">
                                 <rect key="frame" x="20" y="518" width="350" height="210"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-fact" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hx4-rE-Elf">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundFact" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hx4-rE-Elf">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="210"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                     </imageView>
@@ -305,8 +305,8 @@ have an anxiety disorder…. yet only
     </scenes>
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
-        <image name="background-fact" width="465.66665649414062" height="285"/>
-        <image name="background-white" width="130" height="281.33334350585938"/>
+        <image name="backgroundFact" width="465.66665649414062" height="285"/>
+        <image name="backgroundWhite" width="130" height="281.33334350585938"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="mascot" width="36" height="51.333332061767578"/>
         <systemColor name="systemBackgroundColor">

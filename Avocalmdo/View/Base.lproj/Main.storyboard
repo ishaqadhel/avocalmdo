@@ -146,7 +146,7 @@
     </scenes>
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
-        <image name="backgroundWhite" width="390" height="844"/>
+        <image name="backgroundWhite" width="130" height="281.33334350585938"/>
         <image name="logoStarter" width="24.333333969116211" height="36.333332061767578"/>
         <image name="textLogo" width="91" height="28"/>
         <systemColor name="systemBackgroundColor">
