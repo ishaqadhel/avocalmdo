@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,27 +13,27 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="b5z-Ih-ueH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundWhite" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5z-Ih-ueH">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocalmdoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jcp-kF-7bE">
-                                <rect key="frame" x="98" y="339" width="219" height="219"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocalmdoLogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcp-kF-7bE">
+                                <rect key="frame" x="98" y="339" width="194" height="166"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="b5z-Ih-ueH" secondAttribute="bottom" id="5Hf-qH-WDB"/>
-                            <constraint firstItem="jcp-kF-7bE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="H7N-Wg-b3Y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jcp-kF-7bE" secondAttribute="trailing" constant="97" id="P9a-nA-QBZ"/>
-                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="W8J-Va-OdI"/>
-                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Xen-mc-J2p"/>
-                            <constraint firstItem="jcp-kF-7bE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="295" id="aVe-xL-J2z"/>
-                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cII-ZS-93I"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jcp-kF-7bE" secondAttribute="bottom" constant="304" id="d8r-3F-CwI"/>
+                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AfP-92-w1A"/>
+                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GWU-dj-PUO"/>
+                            <constraint firstItem="jcp-kF-7bE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="JPj-vN-lfc"/>
+                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="centerY" secondItem="jcp-kF-7bE" secondAttribute="centerY" id="RF0-78-Xrt"/>
+                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jKR-RA-i36"/>
+                            <constraint firstItem="jcp-kF-7bE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="295" id="nPc-RM-x7c"/>
+                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="centerX" secondItem="jcp-kF-7bE" secondAttribute="centerX" id="wFO-zN-nS9"/>
+                            <constraint firstItem="b5z-Ih-ueH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="yqH-uQ-cf1"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -44,7 +44,7 @@
     </scenes>
     <resources>
         <image name="avocalmdoLogo" width="47" height="66"/>
-        <image name="background" width="390" height="844"/>
+        <image name="backgroundWhite" width="390" height="844"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
