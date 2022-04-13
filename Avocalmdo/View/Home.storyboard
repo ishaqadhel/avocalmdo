@@ -321,12 +321,12 @@ have an anxiety disorder…. yet only
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Npy-hp-uoA" userLabel="AnxietyView">
                                 <rect key="frame" x="20" y="422" width="350" height="91"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tTU-Ze-Mgq">
-                                        <rect key="frame" x="17" y="45.333333333333329" width="20.333333333333329" height="19.666666666666671"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsdown.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tTU-Ze-Mgq">
+                                        <rect key="frame" x="17" y="46.333333333333329" width="20.333333333333329" height="19.666666666666671"/>
                                         <color key="tintColor" systemColor="systemGrayColor"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsdown.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MFd-RW-pSs">
-                                        <rect key="frame" x="312.66666666666669" y="46.333333333333329" width="20.333333333333314" height="25"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MFd-RW-pSs">
+                                        <rect key="frame" x="312.66666666666669" y="45.333333333333329" width="20.333333333333314" height="25"/>
                                         <color key="tintColor" systemColor="systemGrayColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How was your anxiety today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b0W-yS-dbJ">
@@ -361,12 +361,12 @@ have an anxiety disorder…. yet only
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTN-z8-Yf5" userLabel="ActivityView">
                                 <rect key="frame" x="20" y="523" width="350" height="91"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wdv-6t-aRu">
-                                        <rect key="frame" x="17" y="45.333333333333329" width="20.333333333333329" height="19.666666666666671"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsdown.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wdv-6t-aRu">
+                                        <rect key="frame" x="17" y="46.333333333333329" width="20.333333333333329" height="19.666666666666671"/>
                                         <color key="tintColor" systemColor="systemGrayColor"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsdown.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-ek-tij">
-                                        <rect key="frame" x="312.66666666666669" y="46.333333333333329" width="20.333333333333314" height="25"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-ek-tij">
+                                        <rect key="frame" x="312.66666666666669" y="45.333333333333329" width="20.333333333333314" height="25"/>
                                         <color key="tintColor" systemColor="systemGrayColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How hard was your activity today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Dh-df-9DH">
@@ -401,12 +401,12 @@ have an anxiety disorder…. yet only
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lu-3t-nQ0" userLabel="StressView">
                                 <rect key="frame" x="20" y="624" width="350" height="91"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lla-jJ-PPr">
-                                        <rect key="frame" x="17" y="45.333333333333329" width="20.333333333333329" height="19.666666666666671"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsdown.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lla-jJ-PPr">
+                                        <rect key="frame" x="17" y="46.333333333333329" width="20.333333333333329" height="19.666666666666671"/>
                                         <color key="tintColor" systemColor="systemGrayColor"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsdown.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ldu-7T-cOe">
-                                        <rect key="frame" x="312.66666666666669" y="46.333333333333329" width="20.333333333333314" height="25"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ldu-7T-cOe">
+                                        <rect key="frame" x="312.66666666666669" y="45.333333333333329" width="20.333333333333314" height="25"/>
                                         <color key="tintColor" systemColor="systemGrayColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How stress were you today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="h7L-FG-Tvd">
@@ -697,23 +697,124 @@ have an anxiety disorder…. yet only
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qow-tg-QOB">
-                                <rect key="frame" x="75" y="358" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundWave" translatesAutoresizingMaskIntoConstraints="NO" id="UIa-AP-swx">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <color key="textColor" systemColor="labelColor"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qow-tg-QOB">
+                                <rect key="frame" x="50" y="338" width="290" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="kNW-zc-20Y"/>
+                                </constraints>
+                                <color key="textColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="0.74914631622516559" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Fri, 1 April 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FpP-Fb-f4N">
+                                <rect key="frame" x="50" y="122.00000000000001" width="98" height="15.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="0.47843137250000001" green="0.2901960784" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Your mood for today..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gwx-OH-5SY">
+                                <rect key="frame" x="50" y="147.66666666666666" width="219" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OG9-KR-I1E" userLabel="ArrowButton">
+                                <rect key="frame" x="329" y="66" width="28" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happyFace" translatesAutoresizingMaskIntoConstraints="NO" id="obV-iu-5WF">
+                                <rect key="frame" x="50" y="181" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="edt-PR-U8g"/>
+                                    <constraint firstAttribute="height" constant="80" id="xxO-lh-v75"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f4d-mr-qE0">
+                                <rect key="frame" x="157" y="183" width="183" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dyj-yU-lke"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="sy5-O3-cbI"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FfD-dI-XXY">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="emojiCell" id="l41-sg-Yit" customClass="EmojiCollectionViewCell" customModule="Avocalmdo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-41.666666666666664" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SUQ-ty-rUU">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Describe your activity today!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="guO-vf-7bp">
+                                <rect key="frame" x="50" y="311" width="290" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you feel about it?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oGX-aY-qgQ">
+                                <rect key="frame" x="50" y="508" width="290" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-gs-Vdp">
+                                <rect key="frame" x="50" y="535" width="290" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Ni0-hW-Lo0"/>
+                                </constraints>
+                                <color key="textColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="0.74914631620000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="osN-9D-GKZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="osN-9D-GKZ" firstAttribute="trailing" secondItem="qow-tg-QOB" secondAttribute="trailing" constant="50" id="Aae-aS-vDh"/>
+                            <constraint firstItem="qow-tg-QOB" firstAttribute="leading" secondItem="osN-9D-GKZ" secondAttribute="leading" constant="50" id="Cpf-ir-pWF"/>
+                            <constraint firstItem="f4d-mr-qE0" firstAttribute="top" secondItem="gwx-OH-5SY" secondAttribute="bottom" constant="10" id="D24-Gz-weY"/>
+                            <constraint firstItem="oGX-aY-qgQ" firstAttribute="leading" secondItem="osN-9D-GKZ" secondAttribute="leading" constant="50" id="GeB-Lt-obD"/>
+                            <constraint firstItem="obV-iu-5WF" firstAttribute="top" secondItem="gwx-OH-5SY" secondAttribute="bottom" constant="8" id="Gr9-4r-o3X"/>
+                            <constraint firstItem="gwx-OH-5SY" firstAttribute="top" secondItem="FpP-Fb-f4N" secondAttribute="bottom" constant="10" id="IEb-u5-85r"/>
+                            <constraint firstItem="f4d-mr-qE0" firstAttribute="leading" secondItem="obV-iu-5WF" secondAttribute="trailing" constant="27" id="Jz5-Nm-QT1"/>
+                            <constraint firstItem="gwx-OH-5SY" firstAttribute="leading" secondItem="osN-9D-GKZ" secondAttribute="leading" constant="50" id="MG9-IJ-pSu"/>
+                            <constraint firstItem="oGX-aY-qgQ" firstAttribute="top" secondItem="qow-tg-QOB" secondAttribute="bottom" constant="20" id="Sl0-s3-L5j"/>
+                            <constraint firstItem="osN-9D-GKZ" firstAttribute="trailing" secondItem="oGX-aY-qgQ" secondAttribute="trailing" constant="50" id="U5P-TP-6jj"/>
+                            <constraint firstItem="osN-9D-GKZ" firstAttribute="trailing" secondItem="guO-vf-7bp" secondAttribute="trailing" constant="50" id="W70-lP-xLe"/>
+                            <constraint firstItem="rbK-gs-Vdp" firstAttribute="leading" secondItem="osN-9D-GKZ" secondAttribute="leading" constant="50" id="bzt-OQ-qZb"/>
+                            <constraint firstItem="osN-9D-GKZ" firstAttribute="trailing" secondItem="rbK-gs-Vdp" secondAttribute="trailing" constant="50" id="cSW-ek-OWi"/>
+                            <constraint firstItem="osN-9D-GKZ" firstAttribute="trailing" secondItem="f4d-mr-qE0" secondAttribute="trailing" constant="50" id="dg7-cB-4Gc"/>
+                            <constraint firstItem="rbK-gs-Vdp" firstAttribute="top" secondItem="oGX-aY-qgQ" secondAttribute="bottom" constant="10" id="dy3-tS-7HS"/>
+                            <constraint firstItem="FpP-Fb-f4N" firstAttribute="leading" secondItem="osN-9D-GKZ" secondAttribute="leading" constant="50" id="gmM-pJ-tO6"/>
+                            <constraint firstItem="obV-iu-5WF" firstAttribute="leading" secondItem="osN-9D-GKZ" secondAttribute="leading" constant="50" id="hJy-7c-0EW"/>
+                            <constraint firstItem="guO-vf-7bp" firstAttribute="top" secondItem="obV-iu-5WF" secondAttribute="bottom" constant="50" id="kDT-df-h7I"/>
+                            <constraint firstItem="qow-tg-QOB" firstAttribute="top" secondItem="guO-vf-7bp" secondAttribute="bottom" constant="10" id="wFe-mb-2S0"/>
+                            <constraint firstItem="osN-9D-GKZ" firstAttribute="trailing" secondItem="gwx-OH-5SY" secondAttribute="trailing" constant="121" id="wwz-Cg-4l2"/>
+                            <constraint firstItem="guO-vf-7bp" firstAttribute="leading" secondItem="osN-9D-GKZ" secondAttribute="leading" constant="50" id="xy9-4o-3CK"/>
+                            <constraint firstItem="FpP-Fb-f4N" firstAttribute="top" secondItem="osN-9D-GKZ" secondAttribute="top" constant="78" id="ypK-ry-xtI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q4T-sI-6dS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gI-kf-gPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4291" y="363"/>
+            <point key="canvasLocation" x="4290.7692307692305" y="362.55924170616112"/>
         </scene>
     </scenes>
     <resources>
@@ -721,22 +822,18 @@ have an anxiety disorder…. yet only
         <image name="avocalmdoConfused" width="76" height="108"/>
         <image name="backgroundFact" width="465.66665649414062" height="285"/>
         <image name="backgroundGreen" width="130" height="281.33334350585938"/>
+        <image name="backgroundWave" width="261.33334350585938" height="564"/>
         <image name="backgroundWhite" width="130" height="281.33334350585938"/>
         <image name="hand.thumbsdown.fill" catalog="system" width="128" height="121"/>
         <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <image name="happyFace" width="166.66667175292969" height="166.66667175292969"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="mascot" width="36" height="51.333332061767578"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
