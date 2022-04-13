@@ -1,5 +1,5 @@
 //
-//  JournalingViewController.swift
+//  EmojiJournalingViewController.swift
 //  Avocalmdo
 //
 //  Created by Ishaq Adheltyo on 13/04/22.
@@ -7,20 +7,8 @@
 
 import UIKit
 
-class JournalingViewController: UIViewController {
+class EmojiJournalingViewController: UIViewController {
 
-    // Emoji Components
-    @IBOutlet var cryEmoji: UIImageView!
-    @IBOutlet var sadEmoji: UIImageView!
-    @IBOutlet var normalEmoji: UIImageView!
-    @IBOutlet var smileEmoji: UIImageView!
-    @IBOutlet var happyEmoji: UIImageView!
-    
-    // Slider Input Components
-    @IBOutlet var anxietyMeter: UISlider!
-    @IBOutlet var activityMeter: UISlider!
-    @IBOutlet var stressMeter: UISlider!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

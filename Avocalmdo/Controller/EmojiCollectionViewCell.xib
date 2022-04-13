@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="emojiCell" id="5uI-9b-Khc" customClass="EmojiCollectionViewCell" customModule="Avocalmdo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="f5b-CC-StX">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41o-xq-hyo">
+                        <rect key="frame" x="-95" y="-39" width="240" height="128"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ICo-gj-wGX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ICo-gj-wGX" firstAttribute="leading" secondItem="41o-xq-hyo" secondAttribute="leading" id="XqH-gF-Rxe"/>
+                            <constraint firstItem="ICo-gj-wGX" firstAttribute="top" secondItem="41o-xq-hyo" secondAttribute="top" id="gVD-f5-IiZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ICo-gj-wGX" secondAttribute="trailing" id="uU1-C7-pra"/>
+                            <constraint firstAttribute="bottom" secondItem="ICo-gj-wGX" secondAttribute="bottom" id="yQw-Kh-Qwi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="41o-xq-hyo" firstAttribute="top" secondItem="f5b-CC-StX" secondAttribute="top" constant="-39" id="GL8-9p-D22"/>
+                    <constraint firstAttribute="trailing" secondItem="41o-xq-hyo" secondAttribute="trailing" constant="-95" id="IAH-R1-lQJ"/>
+                    <constraint firstItem="41o-xq-hyo" firstAttribute="leading" secondItem="f5b-CC-StX" secondAttribute="leading" constant="-95" id="kee-UQ-XE0"/>
+                    <constraint firstAttribute="bottom" secondItem="41o-xq-hyo" secondAttribute="bottom" constant="-39" id="zmM-RX-U6l"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="emojiImageView" destination="ICo-gj-wGX" id="65c-lW-fgb"/>
+            </connections>
+            <point key="canvasLocation" x="82.608695652173921" y="120.53571428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

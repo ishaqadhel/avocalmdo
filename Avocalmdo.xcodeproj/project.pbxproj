@@ -18,8 +18,11 @@
 		4BA272C02804152800AF8EBA /* StarterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA272BF2804152800AF8EBA /* StarterPageViewController.swift */; };
 		4BEFFD6B2804188100274C48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFFD6A2804188100274C48 /* HomeViewController.swift */; };
 		4BEFFD6F28041A8400274C48 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFFD6E28041A8400274C48 /* Extension.swift */; };
-		6A1C66C92805F91900C35AA6 /* Journaling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1C66C82805F91900C35AA6 /* Journaling.storyboard */; };
-		6A1C66CC2805F93D00C35AA6 /* JournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C66CB2805F93D00C35AA6 /* JournalingViewController.swift */; };
+		6A1C66CC2805F93D00C35AA6 /* AnxietyJournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C66CB2805F93D00C35AA6 /* AnxietyJournalingViewController.swift */; };
+		6A8679E42806B28E0062195C /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8679E22806B28E0062195C /* EmojiCollectionViewCell.swift */; };
+		6A8679E52806B28E0062195C /* EmojiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8679E32806B28E0062195C /* EmojiCollectionViewCell.xib */; };
+		6A8679E72806B7A80062195C /* EmojiJournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8679E62806B7A80062195C /* EmojiJournalingViewController.swift */; };
+		6A8679E92806BAA90062195C /* QuestionJournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8679E82806BAA90062195C /* QuestionJournalingViewController.swift */; };
 		D498DD1E280479CE00491FD5 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D498DD1D280479CE00491FD5 /* SF-Pro.ttf */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +40,11 @@
 		4BA272BF2804152800AF8EBA /* StarterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterPageViewController.swift; sourceTree = "<group>"; };
 		4BEFFD6A2804188100274C48 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4BEFFD6E28041A8400274C48 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		6A1C66C82805F91900C35AA6 /* Journaling.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journaling.storyboard; sourceTree = "<group>"; };
-		6A1C66CB2805F93D00C35AA6 /* JournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingViewController.swift; sourceTree = "<group>"; };
+		6A1C66CB2805F93D00C35AA6 /* AnxietyJournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyJournalingViewController.swift; sourceTree = "<group>"; };
+		6A8679E22806B28E0062195C /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
+		6A8679E32806B28E0062195C /* EmojiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCollectionViewCell.xib; sourceTree = "<group>"; };
+		6A8679E62806B7A80062195C /* EmojiJournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiJournalingViewController.swift; sourceTree = "<group>"; };
+		6A8679E82806BAA90062195C /* QuestionJournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionJournalingViewController.swift; sourceTree = "<group>"; };
 		D498DD1D280479CE00491FD5 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +72,6 @@
 				4B2E1D9B2804109600611427 /* Main.storyboard */,
 				4BA272BA280411AA00AF8EBA /* Home.storyboard */,
 				4BA272BC280411D700AF8EBA /* Calendar.storyboard */,
-				6A1C66C82805F91900C35AA6 /* Journaling.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -77,6 +82,8 @@
 				6A1C66CA2805F92700C35AA6 /* Journaling */,
 				4BEFFD692804187200274C48 /* Home */,
 				4BA272BF2804152800AF8EBA /* StarterPageViewController.swift */,
+				6A8679E22806B28E0062195C /* EmojiCollectionViewCell.swift */,
+				6A8679E32806B28E0062195C /* EmojiCollectionViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,7 +141,9 @@
 		6A1C66CA2805F92700C35AA6 /* Journaling */ = {
 			isa = PBXGroup;
 			children = (
-				6A1C66CB2805F93D00C35AA6 /* JournalingViewController.swift */,
+				6A1C66CB2805F93D00C35AA6 /* AnxietyJournalingViewController.swift */,
+				6A8679E62806B7A80062195C /* EmojiJournalingViewController.swift */,
+				6A8679E82806BAA90062195C /* QuestionJournalingViewController.swift */,
 			);
 			path = Journaling;
 			sourceTree = "<group>";
@@ -211,7 +220,7 @@
 				4B2E1D9D2804109600611427 /* Main.storyboard in Resources */,
 				4BA272BD280411D700AF8EBA /* Calendar.storyboard in Resources */,
 				4BA272BB280411AA00AF8EBA /* Home.storyboard in Resources */,
-				6A1C66C92805F91900C35AA6 /* Journaling.storyboard in Resources */,
+				6A8679E52806B28E0062195C /* EmojiCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,11 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8679E72806B7A80062195C /* EmojiJournalingViewController.swift in Sources */,
 				4BEFFD6B2804188100274C48 /* HomeViewController.swift in Sources */,
-				6A1C66CC2805F93D00C35AA6 /* JournalingViewController.swift in Sources */,
+				6A1C66CC2805F93D00C35AA6 /* AnxietyJournalingViewController.swift in Sources */,
 				4B2E1DA02804109600611427 /* Avocalmdo.xcdatamodeld in Sources */,
+				6A8679E42806B28E0062195C /* EmojiCollectionViewCell.swift in Sources */,
 				4BEFFD6F28041A8400274C48 /* Extension.swift in Sources */,
 				4B2E1D962804109600611427 /* AppDelegate.swift in Sources */,
+				6A8679E92806BAA90062195C /* QuestionJournalingViewController.swift in Sources */,
 				4B2E1D982804109600611427 /* SceneDelegate.swift in Sources */,
 				4BA272C02804152800AF8EBA /* StarterPageViewController.swift in Sources */,
 			);
