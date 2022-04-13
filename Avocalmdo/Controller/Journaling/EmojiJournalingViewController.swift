@@ -1,20 +1,17 @@
 //
-//  JournalingViewController.swift
+//  EmojiJournalingViewController.swift
 //  Avocalmdo
 //
-//  Created by Mikhael Adiputra on 11/04/22.
+//  Created by Ishaq Adheltyo on 13/04/22.
 //
 
 import UIKit
 
+class EmojiJournalingViewController: UIViewController {
 
-
-class JournalingViewController: UIViewController {
-
-    var access = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(access)
+
         // Do any additional setup after loading the view.
     }
     

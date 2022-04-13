@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var headerViewTitle: UILabel!
 
     // JournalingView Elements
+    @IBOutlet var journalingViewArrowButton: UIButton!
     @IBOutlet weak var journalingView: UIView!
     @IBOutlet weak var journalingViewTitle: UILabel!
     @IBOutlet weak var journalingViewSubTitle: UILabel!
@@ -51,5 +52,4 @@ class HomeViewController: UIViewController {
         journalingIconViewMiddle.setRounded(cornerRadiusSize: 5)
         journalingIconViewRight.setRounded(cornerRadiusSize: 5)
     }
-
 }
