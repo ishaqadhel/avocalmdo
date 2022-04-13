@@ -19,6 +19,11 @@
 		4BEFFD6B2804188100274C48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFFD6A2804188100274C48 /* HomeViewController.swift */; };
 		4BEFFD6D28041A3400274C48 /* JournalingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFFD6C28041A3400274C48 /* JournalingViewController.swift */; };
 		4BEFFD6F28041A8400274C48 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEFFD6E28041A8400274C48 /* Extension.swift */; };
+		6760749C28067ECA00E03F74 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6760749B28067ECA00E03F74 /* HistoryViewController.swift */; };
+		6760749F280685C400E03F74 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6760749D280685C400E03F74 /* HistoryTableViewCell.swift */; };
+		676074A0280685C400E03F74 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6760749E280685C400E03F74 /* HistoryTableViewCell.xib */; };
+		676074A42806B7FC00E03F74 /* DummyJournals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676074A32806B7FC00E03F74 /* DummyJournals.swift */; };
+		676074A62806B81A00E03F74 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676074A52806B81A00E03F74 /* Journal.swift */; };
 		D498DD1E280479CE00491FD5 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D498DD1D280479CE00491FD5 /* SF-Pro.ttf */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +42,11 @@
 		4BEFFD6A2804188100274C48 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4BEFFD6C28041A3400274C48 /* JournalingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingViewController.swift; sourceTree = "<group>"; };
 		4BEFFD6E28041A8400274C48 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		6760749B28067ECA00E03F74 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		6760749D280685C400E03F74 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		6760749E280685C400E03F74 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		676074A32806B7FC00E03F74 /* DummyJournals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DummyJournals.swift; path = Avocalmdo/Controller/History/DummyJournals.swift; sourceTree = SOURCE_ROOT; };
+		676074A52806B81A00E03F74 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Journal.swift; path = Avocalmdo/Controller/History/Journal.swift; sourceTree = SOURCE_ROOT; };
 		D498DD1D280479CE00491FD5 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +64,8 @@
 		4B149086280410DB00C11FF5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				676074A32806B7FC00E03F74 /* DummyJournals.swift */,
+				676074A52806B81A00E03F74 /* Journal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -64,6 +76,7 @@
 				4B2E1D9B2804109600611427 /* Main.storyboard */,
 				4BA272BA280411AA00AF8EBA /* Home.storyboard */,
 				4BA272BC280411D700AF8EBA /* Calendar.storyboard */,
+				6760749E280685C400E03F74 /* HistoryTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -71,6 +84,7 @@
 		4B149088280410EA00C11FF5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6760749A28067EA900E03F74 /* History */,
 				4BEFFD692804187200274C48 /* Home */,
 				4BA272BF2804152800AF8EBA /* StarterPageViewController.swift */,
 			);
@@ -128,6 +142,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		6760749A28067EA900E03F74 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				6760749B28067ECA00E03F74 /* HistoryViewController.swift */,
+				6760749D280685C400E03F74 /* HistoryTableViewCell.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
 		D498DD1C280479BB00491FD5 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4B2E1D8D2804109600611427 /* Build configuration list for PBXProject "avocalmdo" */;
+			buildConfigurationList = 4B2E1D8D2804109600611427 /* Build configuration list for PBXProject "Avocalmdo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -199,6 +222,7 @@
 				4B2E1DA22804109700611427 /* Assets.xcassets in Resources */,
 				4B2E1D9D2804109600611427 /* Main.storyboard in Resources */,
 				4BA272BD280411D700AF8EBA /* Calendar.storyboard in Resources */,
+				676074A0280685C400E03F74 /* HistoryTableViewCell.xib in Resources */,
 				4BA272BB280411AA00AF8EBA /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,13 +234,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6760749F280685C400E03F74 /* HistoryTableViewCell.swift in Sources */,
 				4BEFFD6B2804188100274C48 /* HomeViewController.swift in Sources */,
 				4B2E1DA02804109600611427 /* Avocalmdo.xcdatamodeld in Sources */,
 				4BEFFD6F28041A8400274C48 /* Extension.swift in Sources */,
 				4B2E1D962804109600611427 /* AppDelegate.swift in Sources */,
 				4B2E1D982804109600611427 /* SceneDelegate.swift in Sources */,
 				4BA272C02804152800AF8EBA /* StarterPageViewController.swift in Sources */,
+				676074A62806B81A00E03F74 /* Journal.swift in Sources */,
 				4BEFFD6D28041A3400274C48 /* JournalingViewController.swift in Sources */,
+				676074A42806B7FC00E03F74 /* DummyJournals.swift in Sources */,
+				6760749C28067ECA00E03F74 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +443,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B2E1D8D2804109600611427 /* Build configuration list for PBXProject "avocalmdo" */ = {
+		4B2E1D8D2804109600611427 /* Build configuration list for PBXProject "Avocalmdo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B2E1DA72804109700611427 /* Debug */,
