@@ -10,10 +10,11 @@ import UIKit
 class StarterPageViewController: UIViewController {
 
     @IBOutlet weak var greenTextBox: UIView!
-    private let userDefaults = UserDefaults.standard
     @IBOutlet weak var nameTextfield: UITextField!
-    public var userName: String? = ""
 
+    private let userDefaults = UserDefaults.standard
+    private var userName: String? = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         greenTextBox.layer.cornerRadius = 8

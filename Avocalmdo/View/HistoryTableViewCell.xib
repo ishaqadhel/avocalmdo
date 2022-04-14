@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20019"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,6 @@
         <array key="SF-Pro.ttf">
             <string>SFPro-Bold</string>
             <string>SFPro-Medium</string>
-            <string>SFPro-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -24,114 +23,75 @@
                 <rect key="frame" x="0.0" y="0.0" width="350" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-sQ-xuO">
-                        <rect key="frame" x="23" y="45" width="30" height="16"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" fixedFrame="YES" image="imageView:Qzb-5R-q7S:image" translatesAutoresizingMaskIntoConstraints="NO" id="Qzb-5R-q7S">
+                        <rect key="frame" x="264" y="5.9999999999999964" width="59" height="54.666666666666657"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n2I-vm-GVK">
+                        <rect key="frame" x="318" y="72.666666666666671" width="19.333333333333314" height="14.666666666666657"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="tintColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yMb-Sb-Nai" userLabel="Weather">
+                        <rect key="frame" x="23" y="63" width="70" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunnyEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="2BU-60-4ED">
+                                <rect key="frame" x="25" y="2" width="21" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j6x-nT-uIV" userLabel="Activity">
+                        <rect key="frame" x="101" y="63" width="70" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="basketballEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="M24-og-oib">
+                                <rect key="frame" x="25" y="2" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ci5-Qs-9Jy" userLabel="Food">
+                        <rect key="frame" x="179" y="63" width="70" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizzaEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="cBi-4a-31y">
+                                <rect key="frame" x="25" y="2" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-sQ-xuO">
+                        <rect key="frame" x="23" y="38" width="226" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="imageView:Qzb-5R-q7S:image" translatesAutoresizingMaskIntoConstraints="NO" id="Qzb-5R-q7S">
-                        <rect key="frame" x="264" y="5.9999999999999964" width="59" height="54.666666666666657"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3p-bG-rHt">
-                        <rect key="frame" x="23" y="20" width="102" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3p-bG-rHt">
+                        <rect key="frame" x="23" y="13" width="102" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name="SFPro-Bold" family="SF Pro" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n2I-vm-GVK">
-                        <rect key="frame" x="318" y="72.666666666666671" width="19.333333333333314" height="14.666666666666657"/>
-                        <color key="tintColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMb-Sb-Nai" userLabel="Weather">
-                        <rect key="frame" x="23" y="69" width="70" height="18"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunnyEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="2BU-60-4ED">
-                                <rect key="frame" x="5" y="3" width="11" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysC-qT-gan">
-                                <rect key="frame" x="21" y="3" width="39" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="7"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6x-nT-uIV" userLabel="Activity">
-                        <rect key="frame" x="101" y="69" width="70" height="18"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="basketballEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="M24-og-oib">
-                                <rect key="frame" x="5" y="3" width="11" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basketball" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t62-0d-43M">
-                                <rect key="frame" x="21" y="3" width="39" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="7"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci5-Qs-9Jy" userLabel="Food">
-                        <rect key="frame" x="179" y="69" width="70" height="18"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizzaEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="cBi-4a-31y">
-                                <rect key="frame" x="5" y="3" width="11" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipb-mV-vle">
-                                <rect key="frame" x="21" y="3" width="39" height="11"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="7"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
                 </subviews>
                 <color key="backgroundColor" red="0.76862745098039209" green="0.9137254901960784" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                <constraints>
-                    <constraint firstItem="Qzb-5R-q7S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="1pH-L1-IuG"/>
-                    <constraint firstAttribute="bottom" secondItem="yMb-Sb-Nai" secondAttribute="bottom" constant="20" symbolic="YES" id="6Lo-ju-mmc"/>
-                    <constraint firstAttribute="bottom" secondItem="n2I-vm-GVK" secondAttribute="bottom" constant="17" id="7Ke-hJ-U44"/>
-                    <constraint firstAttribute="bottom" secondItem="Ci5-Qs-9Jy" secondAttribute="bottom" constant="20" symbolic="YES" id="9Qf-11-5x1"/>
-                    <constraint firstItem="Ci5-Qs-9Jy" firstAttribute="top" secondItem="XXv-sQ-xuO" secondAttribute="bottom" constant="8" symbolic="YES" id="9v3-Ze-EV0"/>
-                    <constraint firstItem="Qzb-5R-q7S" firstAttribute="leading" secondItem="L3p-bG-rHt" secondAttribute="trailing" constant="139" id="CCP-qR-HW0"/>
-                    <constraint firstItem="XXv-sQ-xuO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="D0Q-Sl-o1f"/>
-                    <constraint firstItem="XXv-sQ-xuO" firstAttribute="top" secondItem="L3p-bG-rHt" secondAttribute="bottom" constant="4" id="E2S-Xn-89e"/>
-                    <constraint firstItem="j6x-nT-uIV" firstAttribute="leading" secondItem="yMb-Sb-Nai" secondAttribute="trailing" constant="8" symbolic="YES" id="ESS-nF-IbP"/>
-                    <constraint firstItem="Ci5-Qs-9Jy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="179" id="G3g-5W-3M4"/>
-                    <constraint firstItem="L3p-bG-rHt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="IvK-a3-Yfl"/>
-                    <constraint firstItem="Ci5-Qs-9Jy" firstAttribute="leading" secondItem="j6x-nT-uIV" secondAttribute="trailing" constant="8" symbolic="YES" id="JPC-z3-NL9"/>
-                    <constraint firstItem="j6x-nT-uIV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="101" id="MBi-Yk-o4R"/>
-                    <constraint firstAttribute="bottom" secondItem="j6x-nT-uIV" secondAttribute="bottom" constant="20" symbolic="YES" id="SXA-tN-Pmf"/>
-                    <constraint firstAttribute="trailing" secondItem="Qzb-5R-q7S" secondAttribute="trailing" constant="27" id="ZQ2-E9-w3v"/>
-                    <constraint firstItem="yMb-Sb-Nai" firstAttribute="top" secondItem="XXv-sQ-xuO" secondAttribute="bottom" constant="8" symbolic="YES" id="bke-oT-8vI"/>
-                    <constraint firstItem="n2I-vm-GVK" firstAttribute="top" secondItem="Qzb-5R-q7S" secondAttribute="bottom" constant="9" id="eZs-h0-sis"/>
-                    <constraint firstItem="j6x-nT-uIV" firstAttribute="top" secondItem="XXv-sQ-xuO" secondAttribute="bottom" constant="8" symbolic="YES" id="enZ-DC-Yvf"/>
-                    <constraint firstAttribute="trailing" secondItem="n2I-vm-GVK" secondAttribute="trailing" constant="12.666666666666686" id="j05-Dy-bDy"/>
-                    <constraint firstItem="L3p-bG-rHt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="m8C-cM-Mxk"/>
-                    <constraint firstItem="n2I-vm-GVK" firstAttribute="leading" secondItem="Ci5-Qs-9Jy" secondAttribute="trailing" constant="69" id="mDy-Om-8zv"/>
-                    <constraint firstItem="yMb-Sb-Nai" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="rrM-TG-BOW"/>
-                    <constraint firstItem="Qzb-5R-q7S" firstAttribute="leading" secondItem="XXv-sQ-xuO" secondAttribute="trailing" constant="211" id="z0X-Yt-vj7"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="activityLabel" destination="t62-0d-43M" id="lct-OC-Zco"/>
                 <outlet property="activityMemoji" destination="M24-og-oib" id="k2w-i8-ykA"/>
                 <outlet property="dateLabel" destination="XXv-sQ-xuO" id="x1i-Hj-u1f"/>
                 <outlet property="foodEmoji" destination="cBi-4a-31y" id="bgc-Rg-Y7h"/>
-                <outlet property="foodLabel" destination="Ipb-mV-vle" id="ZGz-xW-bCz"/>
+                <outlet property="leftView" destination="yMb-Sb-Nai" id="2Xu-Xr-AQ2"/>
+                <outlet property="middleView" destination="j6x-nT-uIV" id="AK6-pF-dhT"/>
+                <outlet property="rightView" destination="Ci5-Qs-9Jy" id="GTj-kg-eSF"/>
                 <outlet property="todayEmoji" destination="Qzb-5R-q7S" id="4b9-bT-B16"/>
                 <outlet property="weatherEmoji" destination="2BU-60-4ED" id="4QF-wJ-m4a"/>
-                <outlet property="weatherLabel" destination="ysC-qT-gan" id="RS9-kz-IG1"/>
             </connections>
             <point key="canvasLocation" x="135.38461538461539" y="89.928909952606631"/>
         </tableViewCell>
