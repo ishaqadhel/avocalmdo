@@ -9,12 +9,14 @@ import UIKit
 
 class EmojiJournalingViewController: UIViewController {
 
+    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var weatherCollectionView: UICollectionView!
     @IBOutlet weak var colorCollectionView: UICollectionView!
     @IBOutlet weak var foodCollectionView: UICollectionView!
     @IBOutlet weak var activityCollectionView: UICollectionView!
     
+    private var isReady = false
     private var weatherIconArray : [UIImage] = [UIImage(named: "cloudyEmojiRound")!,UIImage(named: "rainingEmojiRound")!,UIImage(named: "slightCloudyEmojiRound")!,UIImage(named: "sunnyEmojiRound")!,UIImage(named: "thunderEmojiRound")!]
     private var activityIconArray : [UIImage] = [UIImage(named: "basketballEmojiRound")!,UIImage(named: "bookEmojiRound")!,UIImage(named: "micEmojiRound")!,UIImage(named: "paintEmojiRound")!,UIImage(named: "popcornEmojiRound")!]
     private var foodIconArray : [UIImage] = [UIImage(named: "burgerEmojiRound")!,UIImage(named: "cakeEmojiRound")!,UIImage(named: "chickenEmojiRound")!,UIImage(named: "chocolateEmojiRound")!,UIImage(named: "pizzaEmojiRound")!]
@@ -22,19 +24,25 @@ class EmojiJournalingViewController: UIViewController {
     private var colorIconArray : [UIImage] = [UIImage(named: "blackHeartEmojiRound")!,UIImage(named: "blueHeartEmojiRound")!,UIImage(named: "greenHeartEmojiRound")!,UIImage(named: "redHeartEmojiRound")!,UIImage(named: "yellowHeartEmojiRound")!]
     
     private let date = Date()
-    
+   
+    var delegate : returnJurnalStruct?
     var journalingStruct : JournalingStruct?
     
     override func viewWillAppear(_ animated: Bool) {
-        journalingStruct!.weatherTodayIndex = -1
-        journalingStruct!.foodTodayIndex = -1
-        journalingStruct!.colorTodayIndex = -1
-        journalingStruct!.activityTodayIndex = -1
+        if self.delegate == nil{
+            if isReady == false {
+                journalingStruct!.weatherTodayIndex = -1
+                journalingStruct!.foodTodayIndex = -1
+                journalingStruct!.colorTodayIndex = -1
+                journalingStruct!.activityTodayIndex = -1
+            }
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        pageControl.layer.cornerRadius = 8
         let dateF = DateFormatter()
         dateF.dateFormat = "EEEE, MMM d yyyy"
         let todayDate = dateF.string(from: date)
@@ -67,8 +75,29 @@ class EmojiJournalingViewController: UIViewController {
         if segue.identifier == "goToDetailJournal" {
             if let nextViewController = segue.destination as? QuestionJournalingViewController {
                 nextViewController.journalingStruct = self.journalingStruct!
+                nextViewController.delegate = self
             }
         }
+    }
+    
+    @IBAction func exitButtonPressed(_ sender: UIButton) {
+//        if journalingStruct!.colorTodayIndex != -1 {
+//            journalingStruct!.weatherTodayIndex = index
+//        }
+//        if journalingStruct!.foodTodayIndex != -1  {
+//
+//        }
+//
+//        if journalingStruct!.activityTodayIndex != -1 {
+//
+//        }
+//
+//        if journalingStruct!.weatherTodayIndex != -1 {
+//
+//        }
+        
+        self.navigationController?.popViewController(animated: true)
+        self.delegate?.returnJurnalStruct(journaling: self.journalingStruct!, isReady: true)
     }
 }
 
@@ -106,7 +135,7 @@ extension EmojiJournalingViewController : UICollectionViewDelegate, UICollection
         
         if index == indexDynamic! {
             cell.emojiImageView.layer.borderWidth = 5.0
-            cell.emojiImageView.layer.borderColor = UIColor.white.cgColor
+            cell.emojiImageView.layer.borderColor = UIColor.systemGreen.cgColor
             cell.emojiImageView.layer.cornerRadius = cell.emojiImageView.bounds.height/2
         }else {
             cell.emojiImageView.layer.borderWidth = 0
@@ -137,5 +166,11 @@ extension EmojiJournalingViewController : UICollectionViewDelegate, UICollection
             journalingStruct!.colorTodayIndex = index
         }
         collectionView.reloadData()
+    }
+}
+extension EmojiJournalingViewController : returnJurnalStruct {
+    func returnJurnalStruct(journaling: JournalingStruct, isReady: Bool) {
+        self.journalingStruct = journaling
+        self.isReady = isReady
     }
 }

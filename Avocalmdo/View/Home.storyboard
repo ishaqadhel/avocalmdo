@@ -372,6 +372,17 @@ have an anxiety disorder…. yet only
                                     <action selector="nextButtonPressed:" destination="7OD-Ca-Gac" eventType="touchUpInside" id="vgr-6x-o5n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nf-uW-QNA" userLabel="ArrowButton">
+                                <rect key="frame" x="33" y="66" width="28" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="7OD-Ca-Gac" eventType="touchUpInside" id="FZT-qb-fLT"/>
+                                    <action selector="nextButtonPressed:" destination="7OD-Ca-Gac" eventType="touchUpInside" id="Yin-zp-32q"/>
+                                </connections>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A9C-UF-ehJ">
                                 <rect key="frame" x="20" y="369" width="350" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -415,6 +426,13 @@ have an anxiety disorder…. yet only
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="9c9-Sp-Tjz">
+                                <rect key="frame" x="116" y="750" width="158" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FEo-m0-AId"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -443,6 +461,7 @@ have an anxiety disorder…. yet only
                     <connections>
                         <outlet property="activityMeter" destination="NUt-ai-Nyx" id="UnC-3q-ftg"/>
                         <outlet property="anxietyMeter" destination="4CC-Z2-KMV" id="i08-r0-Itt"/>
+                        <outlet property="pageControl" destination="9c9-Sp-Tjz" id="EN5-ef-lyJ"/>
                         <outlet property="stressMeter" destination="bQ6-gS-aGM" id="oyu-Hu-QGU"/>
                         <outlet property="todayCollectionView" destination="A9C-UF-ehJ" id="ISh-qq-ATK"/>
                         <segue destination="1LF-WC-f71" kind="show" identifier="goToEmojiJournaling" id="cjR-U1-sDR"/>
@@ -464,6 +483,17 @@ have an anxiety disorder…. yet only
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krY-DZ-vqh" userLabel="ArrowButton">
+                                <rect key="frame" x="33" y="66" width="28" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <action selector="exitButtonPressed:" destination="1LF-WC-f71" eventType="touchUpInside" id="AKX-Lj-Ipc"/>
+                                    <action selector="nextButtonPressed:" destination="7OD-Ca-Gac" eventType="touchUpInside" id="g18-BQ-OUS"/>
+                                </connections>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UFW-Av-ilg">
                                 <rect key="frame" x="35" y="233" width="339" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -680,6 +710,13 @@ have an anxiety disorder…. yet only
                                     <action selector="nextButtonPressed:" destination="1LF-WC-f71" eventType="touchUpInside" id="b1S-ZG-qYU"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="CqC-qH-SWd">
+                                <rect key="frame" x="116" y="750" width="158" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TfS-Q3-hyF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -690,6 +727,7 @@ have an anxiety disorder…. yet only
                         <outlet property="colorCollectionView" destination="Q5N-Wt-52Q" id="4zB-bI-HVm"/>
                         <outlet property="dateLabel" destination="HWG-hl-ouf" id="IPx-HV-jUV"/>
                         <outlet property="foodCollectionView" destination="b3w-xR-JfV" id="r8O-13-FwN"/>
+                        <outlet property="pageControl" destination="CqC-qH-SWd" id="QNj-ux-7uA"/>
                         <outlet property="weatherCollectionView" destination="UFW-Av-ilg" id="ARe-QH-9o0"/>
                         <segue destination="6W5-DV-aan" kind="show" identifier="goToDetailJournal" id="fY9-ws-SZe"/>
                     </connections>
@@ -710,6 +748,18 @@ have an anxiety disorder…. yet only
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-Dd-NJu" userLabel="ArrowButton">
+                                <rect key="frame" x="33" y="66" width="28" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.26274509800000001" green="0.47450980390000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <action selector="exitButtonPressed:" destination="6W5-DV-aan" eventType="touchUpInside" id="AkE-dP-qMw"/>
+                                    <action selector="exitButtonPressed:" destination="kM3-eE-4rY" eventType="touchUpInside" id="YYs-wA-0pp"/>
+                                    <action selector="nextButtonPressed:" destination="7OD-Ca-Gac" eventType="touchUpInside" id="jaH-jN-P3u"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qow-tg-QOB">
                                 <rect key="frame" x="50" y="339.33333333333331" width="290" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -814,7 +864,7 @@ have an anxiety disorder…. yet only
                                 </cells>
                             </collectionView>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipa-kS-G8d">
-                                <rect key="frame" x="50" y="711" width="290" height="31"/>
+                                <rect key="frame" x="50" y="699" width="290" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.95686274509803915" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
@@ -825,6 +875,13 @@ have an anxiety disorder…. yet only
                                     <action selector="saveButtonPressed:" destination="6W5-DV-aan" eventType="touchUpInside" id="fr8-VK-WdT"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-Ne-SOf">
+                                <rect key="frame" x="116" y="742" width="158" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="osN-9D-GKZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -860,15 +917,18 @@ have an anxiety disorder…. yet only
                         <outlet property="feelOvercomeTextview" destination="rbK-gs-Vdp" id="Qy8-U0-3lV"/>
                         <outlet property="montageCollectionView" destination="hNS-Ym-amO" id="0Gm-HA-YYr"/>
                         <outlet property="nextSaveButton" destination="OG9-KR-I1E" id="W5k-PE-E30"/>
+                        <outlet property="pageControl" destination="gmG-Ne-SOf" id="tbi-6v-TN2"/>
                         <outlet property="saveButton" destination="Ipa-kS-G8d" id="nEB-4s-jbp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gI-kf-gPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="kM3-eE-4rY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4290.7692307692305" y="362.55924170616112"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="avocalmdoConfused" width="76" height="108"/>
         <image name="backgroundFact" width="465.66665649414062" height="285"/>

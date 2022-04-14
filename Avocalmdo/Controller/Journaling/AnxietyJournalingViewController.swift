@@ -8,9 +8,13 @@
 import UIKit
 import CoreData
 
+protocol returnJurnalStruct {
+    func returnJurnalStruct(journaling : JournalingStruct, isReady : Bool)
+}
+
 class AnxietyJournalingViewController: UIViewController {
     
-    // Slider Input Components
+    @IBOutlet weak var pageControl: UIPageControl!
     private var emojiIcon : [UIImage] = [UIImage(named: "cryFaceRound")!,UIImage(named: "sadFaceRound")!,UIImage(named: "neutralFaceRound")!,UIImage(named: "smileFaceRound")!,UIImage(named: "happyFaceRound")!]
     
     @IBOutlet weak var anxietyMeter: UISlider!
@@ -19,17 +23,24 @@ class AnxietyJournalingViewController: UIViewController {
     @IBOutlet weak var todayCollectionView: UICollectionView!
    
     var journalingStruct : JournalingStruct = JournalingStruct()
-    
-    override func viewWillAppear(_ animated: Bool) {
-      
-    }
+    var isReady = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         todayCollectionView.delegate = self
         todayCollectionView.dataSource = self
-        journalingStruct.emojiTodayIndex = -1
-        // Do any additional setup after loading the view.
+        pageControl.layer.cornerRadius = 8
+        if isReady == false {
+            journalingStruct.emojiTodayIndex = -1
+            journalingStruct.weatherTodayIndex = -1
+            journalingStruct.foodTodayIndex = -1
+            journalingStruct.colorTodayIndex = -1
+            journalingStruct.activityTodayIndex = -1
+        }else {
+            anxietyMeter.setValue(Float(journalingStruct.anxietyMeter), animated: false)
+            activityMeter.setValue(Float(journalingStruct.activityMeter), animated: false)
+            stressMeter.setValue(Float(journalingStruct.stressMeter), animated: false)
+        }
     }
     
     override func viewWillLayoutSubviews() {
@@ -75,10 +86,27 @@ class AnxietyJournalingViewController: UIViewController {
         }
     }
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        if self.journalingStruct.emojiTodayIndex != -1 {
+            let alert   = UIAlertController(title: "Are you sure?", message: "All of the unsaved data will be lost", preferredStyle: .alert)
+            let discard = UIAlertAction(title: "Discard Changes", style: .destructive) { UIAlertAction in
+                self.navigationController?.popViewController(animated: true)
+            }
+            let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+                alert.addAction(discard)
+                alert.addAction(cancel)
+                self.present(alert, animated: true, completion: nil)
+        }else {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToEmojiJournaling" {
             if let nextViewController = segue.destination as? EmojiJournalingViewController {
                 nextViewController.journalingStruct = self.journalingStruct
+                nextViewController.delegate = self
             }
         }
     }
@@ -94,7 +122,7 @@ extension AnxietyJournalingViewController : UICollectionViewDelegate, UICollecti
         let index = indexPath.row
         if index == journalingStruct.emojiTodayIndex {
             cell.emojiImageView.layer.borderWidth = 5.0
-            cell.emojiImageView.layer.borderColor = UIColor.white.cgColor
+            cell.emojiImageView.layer.borderColor = UIColor.systemGreen.cgColor
             cell.emojiImageView.layer.cornerRadius = cell.emojiImageView.bounds.height/2
         }else {
             cell.emojiImageView.layer.borderWidth = 0
@@ -111,4 +139,11 @@ extension AnxietyJournalingViewController : UICollectionViewDelegate, UICollecti
         todayCollectionView.reloadData()
     }
     
+}
+
+extension AnxietyJournalingViewController : returnJurnalStruct {
+    func returnJurnalStruct(journaling: JournalingStruct, isReady : Bool) {
+        self.journalingStruct = journaling
+        self.isReady = isReady
+    }
 }

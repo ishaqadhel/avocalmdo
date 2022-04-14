@@ -53,7 +53,10 @@ class HomeViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        journalingView.setShadowj()
+        quoteView.setShadowj()
+        factsView.setShadowj()
         journalingView.setRounded()
         quoteView.setRounded()
         factsView.setRounded()

@@ -17,6 +17,7 @@ class QuestionJournalingViewController: UIViewController {
     @IBOutlet weak var activityStressTextview: UITextView!
     @IBOutlet weak var feelOvercomeTextview: UITextView!
     
+    @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var feelLabel: UILabel!
     @IBOutlet weak var activityLabel: UILabel!
     @IBOutlet weak var saveButton: UIButton!
@@ -24,18 +25,29 @@ class QuestionJournalingViewController: UIViewController {
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     private var menuCounter = 0
     private let date = Date()
+    private var isReady = false
     
+    var delegate : returnJurnalStruct?
     var journalingStruct : JournalingStruct?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if delegate != nil {
+            self.activityStressTextview.text = self.journalingStruct!.activityToday
+            self.feelOvercomeTextview.text = self.journalingStruct!.feelingToday
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        pageControl.layer.cornerRadius = 8
         saveButton.isEnabled = false
         montageCollectionView.delegate = self
         montageCollectionView.dataSource = self
    
         emojiImageView.image = UIImage(data: journalingStruct!.todayEmotion)
-        
+        saveButton.setShadow()
+        activityStressTextview.setShadow()
+        feelOvercomeTextview.setShadow()
         let tapped = UITapGestureRecognizer(target: self, action: #selector(dismissView(_:)))
         view.addGestureRecognizer(tapped)
         
@@ -73,20 +85,59 @@ class QuestionJournalingViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    @IBAction func exitButtonPressed(_ sender: UIButton) {
+        if self.menuCounter == 0 {
+            if activityStressTextview.text.count != 0 {
+                journalingStruct!.activityToday = activityStressTextview.text!
+            }
+            
+            if feelOvercomeTextview.text.count != 0 {
+                journalingStruct!.feelingToday = feelOvercomeTextview.text!
+            }
+            
+            self.delegate?.returnJurnalStruct(journaling: self.journalingStruct!, isReady: true)
+            self.navigationController?.popViewController(animated: true)
+        }else {
+
+            activityStressTextview.text! =
+            journalingStruct!.activityToday
+            feelOvercomeTextview.text! =
+            journalingStruct!.feelingToday
+            pageControl.currentPage = 2
+            activityLabel.text = "Describe your activity today!"
+            feelLabel.text = "How do you feel about it?"
+            nextSaveButton.isEnabled = true
+            saveButton.isEnabled = false
+            menuCounter = menuCounter - 1
+            
+            UIView.animate(withDuration: 0.1, delay: 0, options: .transitionCrossDissolve) { [self] in
+                nextSaveButton.alpha = 1.0
+                saveButton.alpha = 0.0
+            }
+        }
+    }
+    
+    
     @IBAction func nextSavePressed(_ sender: UIButton) {
         if self.menuCounter == 0 {
             if feelOvercomeTextview.text?.count != 0 && activityStressTextview.text?.count != 0 {
                 
                 journalingStruct!.activityToday = activityStressTextview.text!
                 journalingStruct!.feelingToday = feelOvercomeTextview.text!
-                feelOvercomeTextview.text = ""
-                activityStressTextview.text = ""
+                if isReady == false {
+                    feelOvercomeTextview.text = ""
+                    activityStressTextview.text = ""
+                }else {
+                    feelOvercomeTextview.text = self.journalingStruct!.overcomeStress
+                    activityStressTextview.text = self.journalingStruct!.blockerToday
+                }
+                
                 activityLabel.text = "What blockers or stress do you have?"
                 feelLabel.text = "How did you overcome the stress"
                 nextSaveButton.isEnabled = false
                 saveButton.isEnabled = true
                 menuCounter = menuCounter + 1
-                
+                pageControl.currentPage = 4
                 UIView.animate(withDuration: 0.1, delay: 0, options: .transitionCrossDissolve) { [self] in
                     nextSaveButton.alpha = 0.0
                     saveButton.alpha = 1.0
@@ -180,5 +231,5 @@ extension QuestionJournalingViewController : UICollectionViewDelegate, UICollect
         cell.emojiImageView.backgroundColor = UIColor.clear
         return cell
     }
-    
 }
+
