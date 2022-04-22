@@ -1,6 +1,6 @@
 # avocalmdo
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 IOS Application To help young adults manage their mild and moderate anxiety.
 
@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/pitydevil"><img src="https://avatars.githubusercontent.com/u/45563787?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pitydevil</b></sub></a><br /><a href="https://github.com/ishaqadhel/avocalmdo/commits?author=pitydevil" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/FarhanAlmasyhur"><img src="https://avatars.githubusercontent.com/u/51041665?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Farhan Almasyhur</b></sub></a><br /><a href="https://github.com/ishaqadhel/avocalmdo/commits?author=FarhanAlmasyhur" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Atilhaam"><img src="https://avatars.githubusercontent.com/u/61412981?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Atilhaam</b></sub></a><br /><a href="https://github.com/ishaqadhel/avocalmdo/commits?author=Atilhaam" title="Code">💻</a></td>
+    <td align="center"><a href="https://ishaqadhel.com"><img src="https://avatars.githubusercontent.com/u/49280352?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ishaqadhel</b></sub></a><br /><a href="https://github.com/ishaqadhel/avocalmdo/commits?author=ishaqadhel" title="Code">💻</a></td>
   </tr>
 </table>
 
