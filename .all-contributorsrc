@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "raadyaa",
+      "name": "Radya Farrel Pamesthi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64667665?v=4",
+      "profile": "https://github.com/raadyaa",
+      "contributions": [
+        "projectManagement",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "avocalmdo",
+  "projectOwner": "ishaqadhel",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
