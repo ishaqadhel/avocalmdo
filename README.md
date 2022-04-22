@@ -1,6 +1,6 @@
 # avocalmdo
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 IOS Application To help young adults manage their mild and moderate anxiety.
 
@@ -51,6 +51,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/raadyaa"><img src="https://avatars.githubusercontent.com/u/64667665?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Radya Farrel Pamesthi</b></sub></a><br /><a href="#projectManagement-raadyaa" title="Project Management">📆</a> <a href="#design-raadyaa" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/mgovania"><img src="https://avatars.githubusercontent.com/u/103100424?v=4?s=100" width="100px;" alt=""/><br /><sub><b>mgovania</b></sub></a><br /><a href="#design-mgovania" title="Design">🎨</a></td>
   </tr>
 </table>
 
