@@ -23,6 +23,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "pitydevil",
+      "name": "pitydevil",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45563787?v=4",
+      "profile": "https://github.com/pitydevil",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
