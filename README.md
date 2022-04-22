@@ -9,14 +9,13 @@
 <br />
 <div align="center">
   <p align="center">
-    IOS Journaling App For Anxiety 
+    Avocalmdo is a journaling app to help young adults deal with their anxiety.
     <br />
   </p>
 </div>
 
 <div align="center">
-
-  <a href="">[![Contributors][contributors-shield]][contributors-url]</a>
+  
   <a href="">[![Stargazers][stars-shield]][stars-url]</a>
   <a href="">[![Issues][issues-shield]][issues-url]</a>
 
@@ -27,6 +26,20 @@
 - Mood Tracker
 - Journaling
 - Journaling History
+
+## Screenshot 👁️
+
+- Welcome Screen
+![porto-03](https://user-images.githubusercontent.com/49280352/164640048-7657369c-481f-46cd-814e-300e93677903.png)
+
+- Home Screen
+![porto-04](https://user-images.githubusercontent.com/49280352/164640311-67f54334-4a04-47d9-b8ab-eff1fac92e72.png)
+
+- Journaling & Mood Tracker Screen
+![porto-06](https://user-images.githubusercontent.com/49280352/164640610-78fdf8f6-e410-4918-b4cc-a3a2c4fe7a24.png)
+
+- Journaling History Screen
+![porto-05](https://user-images.githubusercontent.com/49280352/164640444-68bc390d-abe3-4a09-bafb-ee0032311c0f.png)
 
 ## Contributing Git Convention 💬
 
